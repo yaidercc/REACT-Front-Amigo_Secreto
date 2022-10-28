@@ -1,7 +1,11 @@
-
+import {Navbar,FormLogin} from "./components/index";
+import { EmpleadosProvider } from "./context/EmpleadosProvider";
 const App = () => {
   return (
-    <div>App</div>
+    <EmpleadosProvider>
+      {/* <Navbar/> */}
+      <FormLogin/>
+    </EmpleadosProvider>
   )
 }
 
